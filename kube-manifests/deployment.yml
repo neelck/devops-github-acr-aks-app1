@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: springpetclinicgit 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: springpetclinicgit
+  template:
+    metadata:
+      labels:
+        app: springpetclinicgit 
+    spec:
+      containers:
+        - name: springpetclinicgit 
+          image: neelotpal.azurecr.io/springpetclinicgit
+          ports:
+          - containerPort: 80
