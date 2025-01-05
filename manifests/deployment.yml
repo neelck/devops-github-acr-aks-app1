@@ -16,4 +16,4 @@ spec:
         - name: app1nginxaks 
           image: aksdevopsacr1.azurecr.io/app1nginxaks
           ports:
-          - containerPort: 8080
+          - containerPort: 80
